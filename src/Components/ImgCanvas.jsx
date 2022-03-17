@@ -39,23 +39,25 @@ const ImgCanvas = ({ close, url }) => {
         }
     }, [])
 
-    const AddImage = (url, canva) => {
-
-        new fabric.Image.fromURL(url, img => {
-            img.scale(0.25)
-            canva.add(img)
-            canva.renderAll()
-            setImgUrl("")
-            setFinalArray({ ...finalArray, image: img.getCoords() })
-            setPos(pos.concat("image"))
-        })
-
-    }
+  
     useEffect(() => {
+
+        const AddImage = (url, canva) => {
+
+            new fabric.Image.fromURL(url, img => {
+                img.scale(0.25)
+                canva.add(img)
+                canva.renderAll()
+                setImgUrl("")
+                setFinalArray({ ...finalArray, image: img.getCoords() })
+                setPos(pos.concat("image"))
+            })
+    
+        }
         if (imgUrl) {
             AddImage(imgUrl, canvas)
         }
-    }, [imgUrl, canvas, AddImage])
+    }, [imgUrl, canvas, pos, finalArray, setFinalArray])
 
     useEffect(() => {
         const initCanvas = () => (

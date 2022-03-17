@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Sanjayrht.github.io/canvas-text-app",
+  "homepage": "http://Sanjayrht.github.io/Sanjay-Test-canvas",
   "name": "your-app",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +10,6 @@
     "axios": "^0.26.1",
     "fabric": "^4.6.0",
     "fabricjs-react": "^1.0.8",
-    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
@@ -18,9 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
