@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-image-section{
+    background-image: url("../Images/headerImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    transition: all 300ms ease-in-out;
+
+}
+.header-image-section{
+    text-align: left;
+    /* margin: auto; */
+    /* text-align: center; */
+    color: white;
+}
+.header-image-section h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 45px;
+}
+.search-area{
+    margin: auto;
+    width: 60%;
+    position: relative;
+}
+.search-area label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.react-search-icon{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: crimson;
+    
+}
+.search-area input{
+    padding-left: 32px;
+    font-size: 18px;
+}
+.search-input-group{
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+.search-input-group button{
+    padding: 8px;
+    color: white;
+    background-color: rgb(230, 68, 100);
+    font-size: 18px;
+    border: 1px solid white;
+    border-left: none;
+    transition: all 300px ease-in-out;
+}
+.search-input-group button:hover{
+    background-color: white;
+    color: crimson;
+    font-weight: bold;
+    border: 1px solid crimson;
+}
+/* main Image section */
+
+
+.img-card {
+    background-color: white;
+    margin: 10px;
+}
+
+.img-card img{
+    width: 100%;
+    margin-bottom: 2px;
+    height: 300px;
+    border: 1px solid gray;
+    padding: 2px;
+    font-size: 12px;
+    
+}
+.img-card img:hover{
+    border: 1px solid white;
+}
+.img-card button{
+    width: 100%;
+    font-size: 20px;
+    background:transparent;
+    border: 1px solid gray;
+    padding: 10px;
+    color:crimson ;
+    transition: all 300ms ease-out;
+}
+.img-card button:hover{
+    font-weight: bold;
+    background-color: rgb(230, 68, 100);
+    color: white;
+    border:1px solid white
+}
+
+
+/* Loading Dec */
+
+.loding-section{
+    width: 30%;
+    margin-top: 40px;
+
+}
+.loading{
+    display: flex;
+    margin-top: 20px;
+}
+.loading h1{
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+    color: crimson;
+    vertical-align: middle;
+    animation: load 1s infinite linear;
+}
+.loding-section h3{
+    margin-top: 20px;
+    color: crimson;
+    text-align: center;
+}
+
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ErrorPage Dec */
+.error {
+    height: 300px;
+    display: flex;  
+}
+.error div{
+    text-align: center;
+    margin: auto;
+}
+.error h1{
+    font-size: 80px;
+    background: -webkit-linear-gradient(crimson, rgb(250, 189, 189), crimson);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.error h3{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.error p{
+    font-size: 15px;
+}
+
+/* Canvas Dec */
+#canvas {
+    border: 4px dashed rgb(41, 38, 38);
+    background-color: white;
+}
+.heading-canvas{
+    background-image: linear-gradient(20deg,coral,white, black, white, coral);
+    padding: 20px;
+    border-bottom: 2px solid;
+    text-align: center;  
+    margin-bottom: 10px; 
+}
+.heading-canvas h1{
+    font-size: 50px;
+    background: -webkit-linear-gradient(coral, rgb(250, 189, 189), coral);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.canvas-section{
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(250, 202, 184);
+}
+.canvas-card{
+    /* background-color: rgb(250, 202, 184); */
+    /* margin: auto; */
+    position: relative;
+}
+.edit-menu{
+    background-image: linear-gradient(45deg, rgb(56, 54, 54), coral, rgb(37, 35, 35));
+    /* height: 800px; */
+    border: 2px solid pink;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.hrline{
+    border: 1px solid white;
+    opacity: 1;
+}
+.edit-menu h3{
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 5px;
+
+}
+
+.button-dec button{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid coral;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    transition: all 300ms ease-in;
+    color: coral;
+}
+.button-dec button:hover{
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    background-image: linear-gradient(20deg, rgb(238, 245, 242), coral);
+}
+.caption-box textarea{
+    height: 80px;
+}
+.caption-box button{
+  margin: auto;
+  width: 80%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.shapes{
+    margin: 50px 0px;
+}
+
+.shapes h4{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    padding: 0px 10px;
+}
+.btnGrp{
+    display: flex;
+}
+.btnGrp button{
+    margin: 0px 2px;
+    width: 100%;
+}
+.download{
+    margin: 40px 0px;
+    padding: 40px 20px;
+    background-image:linear-gradient(30deg,coral,rgb(245, 171, 171), black);
+    border-radius: 10px;
+}
+.download h2{
+    font-size: 30px;
+    color: white;
+}
+.action-button {
+   display: flex;
+}
+.action-button button{
+    padding: 7px;
+    width: 100%;
+    margin: 0px 5px;
+    font-size: 18px;
+    transition: all 300ms ease-in;
+}
+.btn1{
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 18px;
+    color: green;
+}
+.btn1:hover{
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    background-image: linear-gradient(rgb(186, 207, 198), green, white);
+
+}
+.btn2{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    font-size: 18px;
+    color: crimson;
+}
+.btn2:hover{
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    background-image: linear-gradient(rgb(186, 207, 198), crimson, white);
+
+}
